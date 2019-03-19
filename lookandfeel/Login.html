@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Login Page</title>
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="./css/mystyle.css" />
+	
+</head>
+<h1 style="color: #5e9ca0;"  align="center">Welcome to ISM6225 - MSBAIS Group 3!</h1>
+<h1 style="color: #5e9ca0;"  align="center">Shyamala, Sid, and Vishnu</h1>
+
+<body>
+
+	<form id="login-form" action="#" method="post">
+	
+		<fieldset>
+		
+			<legend>Log in</legend>
+			
+			<label for="login"><font color="#f0e68c">Email</font></label>
+			<input type="text" id="login" name="login"/>
+			<div class="clear"></div>
+			
+			<label for="password"><font color="#f0e68c">Password</font></label>
+			<input type="password" id="password" name="password"/>
+			<div class="clear"></div>
+			
+			<label for="remember_me" style="padding: 0;"><font color="#f0e68c">Remember me?</font></label>
+			<input type="checkbox" id="remember_me" style="position: relative; top: 3px; margin: 0; " name="remember_me"/>
+			<div class="clear"></div>
+			
+			<label for="Keep_me_signed_in" style="padding: 0;"><font color="#f0e68c">Keep me signed in?</font></label>
+			<input type="checkbox" id="Keep_me_signed_in" style="position: relative; top: 10px; margin: 0; " name="remember_me"/>
+			<div class="clear"></div>
+			<br />
+			
+			<input type="button" onclick="return check(this.form)" style="margin: -20px 0 0 287px;" class="button" name="commit" value="Log in" />	
+			<input type="button" onclick="return check(this.form)" style="margin: -25px 0 0 187px;" class="button" name="commit" value="Sign up"/>	
+			
+			<div class="logo"> <img src="img/Logo.png" > </div>
+			<div class="hyper_link"> <a href="Forgot Password" target="_blank" style="color: rgb(0,255,0)"><font color="#f0e68c">Forgot password</font></a></div>
+			<p class="marquee">
+                <span><font color="#f0e68c">Bringing Excellence to the Surface - Bringing Excellence to the Surface - Bringing Excellence to the Surface  &nbsp;</font></span>
+            </p>
+            <p class="marquee marquee2">
+                <span><font color="#f0e68c">Bringing Excellence to the Surface - Bringing Excellence to the Surface - Bringing Excellence to the Surface  &nbsp;</font></span>
+            </p>
+		</fieldset>
+	</form>
+	<script language="javascript">
+function check(form)
+{
+
+if(form.login.value == "vishnutiwari" && form.password.value == "vishnutiwari")
+{
+	//return true;
+	window.location.href = 'index.html';
+}
+else
+{
+	alert("Invalid Email or Password")
+	return false;
+}
+}
+</script>
+
+	
+	
+</body>
+
+</html>

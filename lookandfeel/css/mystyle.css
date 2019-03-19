@@ -1,0 +1,105 @@
+.title{
+	font-family: sans-serif;
+	color: #dc2d5e;
+	text-align: center;
+}
+*					{ margin: 0; padding: 0; }
+body				{ font-family: san-serif; background: url(img/usf-logo-png-2.PNG) top center no-repeat #2E8B57; color: #3a3a3a;   }
+
+.header             { margin: 180px; text-align: center;height: 0px; color: #f0e68c;}
+.description        { margin: 0px;text-align: left;height: 50px; color: #f0e68c;}
+.table_alignment    { margin: 0px;height: 50px; color: #f0e68c;}
+.picture_align      { margin: 0px;height: 90px; color: #f0e68c;}
+
+.clear				{ clear: both; }
+
+form				{ width: 406px; margin: 250px auto 0; }
+
+legend				{ display: none; }
+
+fieldset			{ border: 0; }
+
+label				{ width: 115px; text-align: right; float: left; margin: 0 10px 0 0; padding: 9px 0 0 0; font-size: 16px; }
+
+input				{ width: 220px; display: block; padding: 4px; margin: 0 0 10px 0; font-size: 18px;
+					  color: #3a3a3a; font-family: san-serif;}
+input[type=checkbox]{ width: 20px; margin: 0; display: inline-block; }
+					  
+.button				{ background: url(images/Login.png) repeat-x top center; border: 1px solid #999;
+					  -moz-border-radius: 5px; padding: 5px; color: black; font-weight: bold;
+					  -webkit-border-radius: 5px; font-size: 13px;  width: 70px; }
+.button:hover		{ background: white; color: black; }
+div.logo { background: url(img/Logo.png) repeat-x top center; margin: 15px;border: 1px solid #ccc; float: right; width: 250px; height: 75px; z-index: -1;}
+div.hyper_link {  float: center; width: 300px; padding: 40px; }
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+.marquee2 span {
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  color: #f0e68c;
+}
+
+body {
+  font-family: san-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background:  #f0e68c;
+  position: absolute
+  right:0;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 20px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  right:0;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
